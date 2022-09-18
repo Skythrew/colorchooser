@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "discord-menus": "^1.0.8",
+    "discord.js": "^13.11.0",
+    "dotenv": "^16.0.2",
+    "emoticon.js": "^1.0.0"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}
