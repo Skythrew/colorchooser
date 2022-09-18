@@ -11,7 +11,7 @@ const commandsDir = 'commands';
 const Discord = require('discord.js');
 const fs = require('fs');
 
-const client = new Discord.Client({intents: Discord.Intents.FLAGS.GUILDS});
+const client = new Discord.Client({intents: [Discord.Intents.FLAGS.GUILDS, Discord.Intents.FLAGS.GUILD_MEMBERS]});
 
 client.login(process.env.TOKEN);
 

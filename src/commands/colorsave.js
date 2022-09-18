@@ -3,6 +3,8 @@ module.exports = {
     description: 'Save color roles',
     options: [],
     async execute(interaction) {
+        if(!interaction.member.permissions.has('ADMINISTRATOR')) return interaction.reply('You have not the permission to do this.')
+
         let currentRoles = await interaction.guild.roles.fetch();
         for(let i = 0; i < currentRoles.size; i++){
             const role = currentRoles.get(currentRoles.keyAt(i));
